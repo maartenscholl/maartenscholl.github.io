@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 300" font-family="'Merriweather Sans', sans-serif">
+  <defs>
+    <marker id="ahm" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#003066"/>
+    </marker>
+    <style>
+      .node{fill:#fff;stroke:#003066;stroke-width:2}
+      .lbl{fill:#003066;font-size:14px;font-weight:600;text-anchor:middle;dominant-baseline:central}
+      .edge{stroke:#003066;stroke-width:1.7;fill:none;marker-end:url(#ahm)}
+      .rate{fill:#BC0031;font-size:13px;font-weight:600;text-anchor:middle}
+      .big{fill:#4B954E;font-size:13px;font-weight:700;text-anchor:middle}
+      .cap{fill:#858585;font-size:13px;text-anchor:middle;font-style:italic}
+    </style>
+  </defs>
+  <text class="cap" x="150" y="26">short cycle, mean gain higher</text>
+  <text class="cap" x="410" y="26">long cycle, total gain higher</text>
+
+  <!-- short triangle: c1 -> c2 -> c3 -> c1 -->
+  <path class="edge" d="M218,148 L112,98"/>
+  <path class="edge" d="M95,118 L95,202"/>
+  <path class="edge" d="M112,222 L218,172"/>
+  <text class="rate" x="143" y="112">1.01</text>
+  <text class="rate" x="79" y="164">1.01</text>
+  <text class="rate" x="143" y="212">1.01</text>
+
+  <!-- long diamond: c1 -> c4 -> c5 -> c6 -> c1 -->
+  <path class="edge" d="M262,148 L348,93"/>
+  <path class="edge" d="M392,93 L470,148"/>
+  <path class="edge" d="M470,172 L392,227"/>
+  <path class="edge" d="M348,227 L262,172"/>
+  <text class="rate" x="300" y="108">1.00</text>
+  <text class="rate" x="440" y="108">1.00</text>
+  <text class="big"  x="440" y="218">1.035</text>
+  <text class="rate" x="300" y="218">1.00</text>
+
+  <circle class="node" cx="240" cy="160" r="22"/><text class="lbl" x="240" y="160">c₁</text>
+  <circle class="node" cx="95" cy="90" r="20"/><text class="lbl" x="95" y="90">c₂</text>
+  <circle class="node" cx="95" cy="230" r="20"/><text class="lbl" x="95" y="230">c₃</text>
+  <circle class="node" cx="370" cy="80" r="20"/><text class="lbl" x="370" y="80">c₄</text>
+  <circle class="node" cx="488" cy="160" r="20"/><text class="lbl" x="488" y="160">c₅</text>
+  <circle class="node" cx="370" cy="240" r="20"/><text class="lbl" x="370" y="240">c₆</text>
+</svg>

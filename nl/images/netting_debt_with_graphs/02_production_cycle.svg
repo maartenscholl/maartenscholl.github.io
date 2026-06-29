@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 260" font-family="'Merriweather Sans', sans-serif">
+  <defs>
+    <marker id="ah2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#BC0031"/>
+    </marker>
+    <style>
+      .node{fill:#fff;stroke:#003066;stroke-width:2}
+      .lbl{fill:#003066;font-size:15px;font-weight:600;text-anchor:middle;dominant-baseline:central}
+      .edge{stroke:#BC0031;stroke-width:1.8;fill:none;marker-end:url(#ah2)}
+    </style>
+  </defs>
+  <path class="edge" d="M168,68 L262,150"/>
+  <path class="edge" d="M250,182 L110,182"/>
+  <path class="edge" d="M98,150 L172,68"/>
+  <circle class="node" cx="180" cy="58" r="20"/><text class="lbl" x="180" y="58">v₁</text>
+  <circle class="node" cx="278" cy="170" r="20"/><text class="lbl" x="278" y="170">v₂</text>
+  <circle class="node" cx="82" cy="170" r="20"/><text class="lbl" x="82" y="170">v₃</text>
+</svg>

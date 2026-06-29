@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" font-family="'Merriweather Sans', sans-serif">
+  <defs>
+    <style>
+      .node{fill:#fff;stroke:#003066;stroke-width:2}
+      .pick{fill:#FFCD00;stroke:#003066;stroke-width:2}
+      .lbl{fill:#003066;font-size:13px;font-weight:600;text-anchor:middle;dominant-baseline:central}
+      .edge{stroke:#003066;stroke-width:1.6}
+      .faint{stroke:#D0C8C0;stroke-width:1.4}
+      .clique{stroke:#0087CE;stroke-width:2.6}
+      .cap{fill:#858585;font-size:13px;text-anchor:middle;font-style:italic}
+    </style>
+  </defs>
+
+  <!-- LEFT: correlation graph, independent set highlighted -->
+  <text class="cap" x="160" y="24">Correlation graph — independent set</text>
+  <line class="edge" x1="160" y1="55" x2="242" y2="102"/>
+  <line class="edge" x1="242" y1="102" x2="242" y2="198"/>
+  <line class="edge" x1="242" y1="198" x2="160" y2="245"/>
+  <line class="edge" x1="160" y1="245" x2="78" y2="198"/>
+  <line class="edge" x1="78" y1="198" x2="78" y2="102"/>
+  <line class="edge" x1="78" y1="102" x2="160" y2="55"/>
+  <circle class="pick" cx="160" cy="55" r="18"/><text class="lbl" x="160" y="55">s₁</text>
+  <circle class="node" cx="242" cy="102" r="18"/><text class="lbl" x="242" y="102">s₂</text>
+  <circle class="pick" cx="242" cy="198" r="18"/><text class="lbl" x="242" y="198">s₃</text>
+  <circle class="node" cx="160" cy="245" r="18"/><text class="lbl" x="160" y="245">s₄</text>
+  <circle class="pick" cx="78" cy="198" r="18"/><text class="lbl" x="78" y="198">s₅</text>
+  <circle class="node" cx="78" cy="102" r="18"/><text class="lbl" x="78" y="102">s₆</text>
+
+  <line x1="340" y1="50" x2="340" y2="262" stroke="#EAEAEA" stroke-width="1.5"/>
+
+  <!-- RIGHT: complement graph, same set is a clique -->
+  <text class="cap" x="520" y="24">Complement graph — clique</text>
+  <line class="faint" x1="520" y1="55" x2="520" y2="245"/>
+  <line class="faint" x1="602" y1="102" x2="520" y2="245"/>
+  <line class="faint" x1="602" y1="102" x2="438" y2="198"/>
+  <line class="faint" x1="602" y1="102" x2="438" y2="102"/>
+  <line class="faint" x1="602" y1="198" x2="438" y2="102"/>
+  <line class="faint" x1="520" y1="245" x2="438" y2="102"/>
+  <line class="clique" x1="520" y1="55" x2="602" y2="198"/>
+  <line class="clique" x1="602" y1="198" x2="438" y2="198"/>
+  <line class="clique" x1="438" y1="198" x2="520" y2="55"/>
+  <circle class="pick" cx="520" cy="55" r="18"/><text class="lbl" x="520" y="55">s₁</text>
+  <circle class="node" cx="602" cy="102" r="18"/><text class="lbl" x="602" y="102">s₂</text>
+  <circle class="pick" cx="602" cy="198" r="18"/><text class="lbl" x="602" y="198">s₃</text>
+  <circle class="node" cx="520" cy="245" r="18"/><text class="lbl" x="520" y="245">s₄</text>
+  <circle class="pick" cx="438" cy="198" r="18"/><text class="lbl" x="438" y="198">s₅</text>
+  <circle class="node" cx="438" cy="102" r="18"/><text class="lbl" x="438" y="102">s₆</text>
+</svg>

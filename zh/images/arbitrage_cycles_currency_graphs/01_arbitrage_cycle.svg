@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 290" font-family="'Merriweather Sans', sans-serif">
+  <defs>
+    <marker id="aha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#0087CE"/>
+    </marker>
+    <style>
+      .node{fill:#fff;stroke:#003066;stroke-width:2}
+      .lbl{fill:#003066;font-size:15px;font-weight:600;text-anchor:middle;dominant-baseline:central}
+      .edge{stroke:#0087CE;stroke-width:1.8;fill:none;marker-end:url(#aha)}
+      .rate{fill:#BC0031;font-size:14px;font-weight:600;text-anchor:middle}
+    </style>
+  </defs>
+  <path class="edge" d="M188,78 L107,197"/>
+  <path class="edge" d="M119,215 L281,215"/>
+  <path class="edge" d="M293,197 L212,78"/>
+  <text class="rate" x="121" y="138">r₁₂</text>
+  <text class="rate" x="200" y="238">r₂₃</text>
+  <text class="rate" x="279" y="138">r₃₁</text>
+  <circle class="node" cx="200" cy="62" r="22"/><text class="lbl" x="200" y="62">c₁</text>
+  <circle class="node" cx="95" cy="215" r="22"/><text class="lbl" x="95" y="215">c₂</text>
+  <circle class="node" cx="305" cy="215" r="22"/><text class="lbl" x="305" y="215">c₃</text>
+</svg>
