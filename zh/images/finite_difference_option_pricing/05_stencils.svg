@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 300" font-family="'Merriweather Sans', sans-serif">
+  <defs>
+    <marker id="sa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#858585"/>
+    </marker>
+    <style>
+      .known{fill:#003066;stroke:#003066;stroke-width:1}
+      .unk{fill:#fff;stroke:#BC0031;stroke-width:2}
+      .arr{stroke:#858585;stroke-width:1.4;fill:none;marker-end:url(#sa)}
+      .couple{stroke:#BC0031;stroke-width:1.8;fill:none}
+      .link{stroke:#D0C8C0;stroke-width:1.2;fill:none}
+      .ttl{fill:#151515;font-size:13px;font-weight:600;text-anchor:middle}
+      .rl{fill:#858585;font-size:12px;text-anchor:end}
+      .cl{fill:#858585;font-size:11px;text-anchor:middle}
+    </style>
+  </defs>
+
+  <!-- LEFT: FTCS explicit -->
+  <text class="ttl" x="150" y="34">FTCS (explicit)</text>
+  <text class="cl" x="150" y="52" fill="#858585">one unknown per node</text>
+  <text class="rl" x="62" y="214">&#964;&#8345;</text>
+  <text class="rl" x="62" y="94">&#964;&#8345;&#8330;&#8321;</text>
+  <line class="arr" x1="93"  y1="203" x2="147" y2="99"/>
+  <line class="arr" x1="150" y1="200" x2="150" y2="99"/>
+  <line class="arr" x1="207" y1="203" x2="153" y2="99"/>
+  <circle class="known" cx="90"  cy="210" r="5.5"/>
+  <circle class="known" cx="150" cy="210" r="5.5"/>
+  <circle class="known" cx="210" cy="210" r="5.5"/>
+  <circle class="unk"   cx="150" cy="90"  r="5.5"/>
+  <text class="cl" x="90"  y="236">i&#8722;1</text>
+  <text class="cl" x="150" y="236">i</text>
+  <text class="cl" x="210" y="236">i+1</text>
+
+  <line x1="290" y1="60" x2="290" y2="250" stroke="#EAEAEA" stroke-width="1.5"/>
+
+  <!-- RIGHT: Crank-Nicolson implicit -->
+  <text class="ttl" x="440" y="34">Crank&#8211;Nicolson (implicit)</text>
+  <text class="cl" x="440" y="52" fill="#858585">three unknowns solved together</text>
+  <!-- links from known row to unknown row -->
+  <line class="link" x1="380" y1="204" x2="380" y2="96"/>
+  <line class="link" x1="440" y1="204" x2="440" y2="96"/>
+  <line class="link" x1="500" y1="204" x2="500" y2="96"/>
+  <line class="link" x1="386" y1="205" x2="434" y2="95"/>
+  <line class="link" x1="494" y1="205" x2="446" y2="95"/>
+  <!-- coupling of the three unknowns -->
+  <line class="couple" x1="380" y1="90" x2="500" y2="90"/>
+  <circle class="known" cx="380" cy="210" r="5.5"/>
+  <circle class="known" cx="440" cy="210" r="5.5"/>
+  <circle class="known" cx="500" cy="210" r="5.5"/>
+  <circle class="unk"   cx="380" cy="90" r="5.5"/>
+  <circle class="unk"   cx="440" cy="90" r="5.5"/>
+  <circle class="unk"   cx="500" cy="90" r="5.5"/>
+  <text class="cl" x="380" y="236">i&#8722;1</text>
+  <text class="cl" x="440" y="236">i</text>
+  <text class="cl" x="500" y="236">i+1</text>
+
+  <!-- legend -->
+  <circle class="known" cx="200" cy="280" r="5"/>
+  <text class="cl" x="212" y="284" text-anchor="start" fill="#858585">known (level n)</text>
+  <circle class="unk" cx="330" cy="280" r="5"/>
+  <text class="cl" x="342" y="284" text-anchor="start" fill="#858585">unknown (level n+1)</text>
+</svg>
