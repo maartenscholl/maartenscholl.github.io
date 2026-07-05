@@ -16,8 +16,7 @@
   </defs>
 
   <!-- LEFT: FTCS explicit -->
-  <text class="ttl" x="150" y="34">FTCS (explicit)</text>
-  <text class="cl" x="150" y="52" fill="#858585">one unknown per node</text>
+  <text class="ttl" x="150" y="40">FTCS (explicit)</text>
   <text class="rl" x="62" y="214">&#964;&#8345;</text>
   <text class="rl" x="62" y="94">&#964;&#8345;&#8330;&#8321;</text>
   <line class="arr" x1="93"  y1="203" x2="147" y2="99"/>
@@ -34,8 +33,7 @@
   <line x1="290" y1="60" x2="290" y2="250" stroke="#EAEAEA" stroke-width="1.5"/>
 
   <!-- RIGHT: Crank-Nicolson implicit -->
-  <text class="ttl" x="440" y="34">Crank&#8211;Nicolson (implicit)</text>
-  <text class="cl" x="440" y="52" fill="#858585">three unknowns solved together</text>
+  <text class="ttl" x="440" y="40">Crank&#8211;Nicolson (implicit)</text>
   <!-- links from known row to unknown row -->
   <line class="link" x1="380" y1="204" x2="380" y2="96"/>
   <line class="link" x1="440" y1="204" x2="440" y2="96"/>
@@ -55,8 +53,8 @@
   <text class="cl" x="500" y="236">i+1</text>
 
   <!-- legend -->
-  <circle class="known" cx="200" cy="280" r="5"/>
-  <text class="cl" x="212" y="284" text-anchor="start" fill="#858585">known (level n)</text>
-  <circle class="unk" cx="330" cy="280" r="5"/>
-  <text class="cl" x="342" y="284" text-anchor="start" fill="#858585">unknown (level n+1)</text>
+  <circle class="known" cx="176" cy="282" r="5"/>
+  <text class="cl" x="190" y="286" text-anchor="start" fill="#858585">known</text>
+  <circle class="unk" cx="330" cy="282" r="5"/>
+  <text class="cl" x="344" y="286" text-anchor="start" fill="#858585">unknown</text>
 </svg>
